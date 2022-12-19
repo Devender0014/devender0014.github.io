@@ -1,0 +1,36 @@
+/* .react-activity-calendar__legend-colors{
+    display: flex;
+} */
+
+footer div{
+    display: flex;
+    /* width: 1000px; */
+
+}
+
+.GithubMain {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding-top: 10%;
+    /* padding-bottom: 10px; */
+    height: 50vh;
+    /* margin-top: auto; */
+}
+
+.GithubMain h1{
+    padding-bottom: 50px;
+}
+
+.GithubMain span::before{
+    background-color: transparent;
+    color: transparent;
+    /* width: 10px; */
+    font-size: 1px;
+
+}
+
+.GithubMain span{
+    font-size: 20px;
+}

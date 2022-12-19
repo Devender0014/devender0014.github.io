@@ -1,0 +1,140 @@
+.navbar {
+	position: fixed;
+	height: auto;
+	width: 100%;
+	z-index: 3000;
+	
+	/* filter: blur(8px); */
+	/* -webkit-filter: blur(8px); */
+	/* background: rgb(25 19 52); */
+	/* background-color: rgb(0,0,0); Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.navbar .navbar__content.content-container-fluid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	/* padding: 2px; */
+}
+
+@media (min-width: 450px) {
+	.navbar .navbar__content.content-container-fluid {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
+}
+
+.navbar__title {
+	display: flex;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+}
+.resume{
+	color: white;
+	text-decoration: none;
+	margin: 0;
+	padding: 10px 16px;
+	position: relative;
+	margin: 0.05rem 0.25rem;
+	text-align: center;
+	/* transition: all 0.5s ease-in-out; */
+	/* overflow: hidden; */
+	background-color: rgb(112, 15, 223);
+	border: none;
+	font-size: 16px;
+	animation: lighting 1s infinite;
+
+}
+
+.navbar__title h1 {
+	margin: 0;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	margin-left: 20px;
+	/* font-family: "Parisienne", cursive; */
+}
+
+.navbar__title img {
+	max-height: 56px;
+	max-width: 56px;
+	margin-right: 4px;
+}
+
+.navbar .navbar__menu {
+	background: none;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 8px;
+}
+
+.navbar .navbar__menu svg {
+	font-size: 40px;
+}
+
+.navbar-links {
+	height: 0;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	overflow-y: hidden;
+	transition: 0.4s ease;
+}
+
+.navbar-links.expanded {
+	height: 240px;
+	visibility: visible;
+}
+
+.navbar-links a {
+	color: white;
+	text-decoration: none;
+	margin: 0;
+	padding: 10px 16px;
+	position: relative;
+	margin: 0.05rem 0.25rem;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}
+
+.navbar-links a:hover {
+	background-color: white;
+	color: black;
+}
+.resume:hover {
+	background-color: rgb(0, 0, 0) !important;
+	color: black;	
+	cursor: pointer;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 801px) {
+	.navbar .navbar__menu {
+		display: none;
+	}
+
+	.navbar__title {
+		width: 230px;
+	}
+
+	.navbar h1 {
+		font-size: 1.75rem;
+	}
+	.navbar .navbar__content.content-container-fluid{
+		padding: 10px;
+	}
+
+	.navbar-links,
+	.navbar-links.expanded {
+		visibility: visible;
+		height: unset;
+		flex-basis: unset;
+		flex-direction: row;
+		align-items: center;
+	}
+}

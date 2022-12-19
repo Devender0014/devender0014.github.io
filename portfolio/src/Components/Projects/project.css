@@ -1,0 +1,191 @@
+.project {
+    background-color: rgb(0, 0, 0);
+    /* height: 500px; */
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    gap: 30px;
+  }
+  .piroject {
+    max-width: 1150px;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 20px;
+    text-align: left;
+    /* margin-left: 200px; */
+    /* padding: 0; */
+  }
+  .box {
+    max-width: 1150px;
+    margin: auto;
+    /* margin-left: 60px; */
+    border-radius: 10px;
+    /* background-color: rgba(160, 156, 156, 0.1)  ; */
+    height: 300px;
+    /* border: 10px solid rgb(235, 57, 235); */
+    background-color: white;
+    /* box-shadow: 0px 0px 20px rgb(140, 11, 172); */
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  .projectimg {
+    height: 295px;
+    border-top-left-radius: 10px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-bottom-left-radius: 10px;
+    transition: all 0.5s ease;
+    /* overflow: hidden; */
+    display: inline;
+    z-index: 100;
+  }
+  .projectimg:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+  }
+  .linkdiv {
+    width: 80%;
+    align-items: center;
+    /* padding: 0; */
+    display: flex;
+    /* margin: 0; */
+    /* padding: 0; */
+    height: 50px;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .links {
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(112, 15, 223);
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    padding: 0;
+    margin: 0;
+  }
+  .description {
+    min-height: 100px;
+    /* padding: 10px; */
+    text-align: left;
+    align-items: center;
+  }
+  .description p {
+    font-size: 1rem;
+    color: rgb(46, 43, 43) !important;
+    font-weight: 600;
+  }
+  .btndiv {
+    display: flex;
+    row-gap: 10px;
+    width: 100%;
+    /* flex-direction: row; */
+    /* justify-content: space-a; */
+    gap: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    top: -10px;
+  }
+  .btndiv button {
+    padding: 8px 25px 8px 25px;
+    font-size: 18px;
+    background-color: rgb(112, 15, 223);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    /* box-shadow: 0px 0px 6px rgb(240, 170, 240); */
+    border: none;
+  }
+  
+  .btndiv button {
+    /* font-family: "Cinzel Decorative", cursive !important; */
+    animation: lighting 2s linear infinite;
+  }
+  .btndiv button:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .btndiv button:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .btndiv button:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .btndiv button:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .btndiv button:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  /* .projectimg:hover {
+    transform: scale(1.2);
+    transform: rotateY(180deg);
+    z-index: 1000;
+  } */
+  @media screen and (max-width: 801px) {
+    .piroject {
+      margin-left: 15px;
+    }
+    .box {
+      flex-direction: column;
+      margin-left: 15px;
+      height: auto;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 0px;
+    }
+    .projectimg {
+      width: 100%;
+      height: 100%;
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 20px;
+    }
+    .links {
+      line-height: 0px;
+      padding: 0;
+      margin-top: -20px;
+    }
+    .heading {
+      padding: 0;
+      margin-top: -25px;
+    }
+  }
+  button {
+    position: relative;
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(123, 33, 196);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  

@@ -1,38 +1,237 @@
+/* * {
+	
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+} */
+
+*{
+	font-family: 'M PLUS Code Latin', sans-serif;
+	cursor:url(./images/purple.png), auto;
+}
+
+html::-webkit-scrollbar {
+	width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: black;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(75, 75, 75);
+}
+
+html::-webkit-scrollbar-track {
+	background-color: rgba(68, 68, 68, 0.753);
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+	overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-heading {
+	margin: 0 auto;
+	color: white;
+	font-size: 1.5rem;
+	margin: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animation-container {
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	background-color: black;
+	margin: auto;
+	height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main-section {
+	height: 100vh;
+	padding: 0 0rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+	font-size: 1.25rem;
+}
+
+span::before {
+	content: "WEB DEVELOPMENT";
+	text-transform: uppercase;
+	color: white;
+	background-color: rgb(112, 15, 223);
+	padding: 0.5rem;
+	animation: switchWords 5s infinite ease-in-out;
+}
+
+ul {
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li {
+	color: white;
+	font-family: "Cinzel Decorative", cursive !important;
+	font-size: 2rem;
+	/* letter-spacing: 5px; */
+	animation: lighting 2s linear infinite;
+}
+.wraping{
+	width: 100%;
+	background-color: black;
+}
+
+.about-me {
+	text-align: left;
+	max-width: 1150px;
+	color: white;
+	display: flex;
+	margin:auto;
+	flex-direction: column-reverse;
+	gap: 20px;
+	/* padding: 0; */
+	/* margin: 0; */
+}
+.profilePic{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.profilePic img{
+	display: block;
+   width: 60%;
+   padding-bottom: 20px;
+}
+
+.about-me-info {
+	margin: 0 auto;
+	width: 90%;
+	padding: 1rem 0;
+}
+
+.about-me-info h1 {
+	color: white;
+	font-size: 2rem;
+}
+
+.about-me p {
+	font-size: 1rem;
+}
+
+@keyframes lighting {
+	0% {
+		color: white;
+		text-shadow: none;
+	}
+	90% {
+		color: white;
+		text-shadow: none;
+	}
+	100% {
+		color: #fff600;
+		text-shadow: 0 0 9px #fff600, 0 0 50px #ff6c00;
+	}
+}
+
+ul li:nth-child(1) {
+	animation-delay: 0s;
+}
+ul li:nth-child(2) {
+	animation-delay: 0.1s;
+}
+ul li:nth-child(3) {
+	animation-delay: 0.2s;
+}
+ul li:nth-child(4) {
+	animation-delay: 0.3s;
+}
+ul li:nth-child(5) {
+	animation-delay: 0.4s;
+}
+ul li:nth-child(6) {
+	animation-delay: 0.5s;
+}
+ul li:nth-child(7) {
+	animation-delay: 0.6s;
+}
+ul li:nth-child(8) {
+	animation-delay: 0.7s;
+}
+
+@keyframes switchWords {
+	0% {
+		content: "WEB DEV";
+	}
+	30% {
+		content: "TO BUILD";
+	}
+	60% {
+		content: "REACT JS";
+	}
+	100% {
+		content: "TO CODE";
+	}
+}
+
+@media screen and (min-width: 640px) {
+	:root {
+		scroll-padding-top: 30px;
+	}
+
+	ul li {
+		font-size: 5rem;
+	}
+
+	span {
+		font-size: 2.5rem;
+	}
+*{
+	font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+	span::before {
+		padding: 1rem;
+	}
+	.main-heading {
+		font-size: 35px;
+	}
+	.about-me {
+		padding-top: 0;
+		padding: 2rem;
+		flex-direction: row;
+	}
+	.profilePic img{
+		display: block;
+	   width: 80%;
+	}
+
+	.about-me-info {
+		padding: 20px;
+		width: 60%;
+	}
+	.about-me p {
+		font-size: 1.5rem;
+	}
+	.about-me-info h1 {
+		font-size: 3rem;
+		margin-top: -50px;
+	}
 }
