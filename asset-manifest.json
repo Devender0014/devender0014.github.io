@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3074f7ac.css",
-    "main.js": "/static/js/main.40bfc72d.js",
+    "main.css": "/static/css/main.b1b310cd.css",
+    "main.js": "/static/js/main.bc74c74d.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Screenshot 2022-12-19 at 2.37.50 PM.png": "/static/media/Screenshot 2022-12-19 at 2.37.50 PM.d5c750b87557c3c6faf1.png",
     "static/media/Screenshot 2022-12-19 at 2.44.17 PM.png": "/static/media/Screenshot 2022-12-19 at 2.44.17 PM.aba64a61d67352feefd6.png",
     "static/media/Screenshot 2022-12-19 at 2.32.42 PM.png": "/static/media/Screenshot 2022-12-19 at 2.32.42 PM.b5126c70120a913219fa.png",
-    "static/media/Devender_Yadav_Resume.pdf": "/static/media/Devender_Yadav_Resume.e3aacf08e721389dd670.pdf",
+    "static/media/blooming.png": "/static/media/blooming.b74079f684ce29044ef1.png",
     "static/media/IMG_2262.png": "/static/media/IMG_2262.a01e4e6d17c222f2857f.png",
     "index.html": "/index.html",
-    "main.3074f7ac.css.map": "/static/css/main.3074f7ac.css.map",
-    "main.40bfc72d.js.map": "/static/js/main.40bfc72d.js.map",
+    "main.b1b310cd.css.map": "/static/css/main.b1b310cd.css.map",
+    "main.bc74c74d.js.map": "/static/js/main.bc74c74d.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3074f7ac.css",
-    "static/js/main.40bfc72d.js"
+    "static/css/main.b1b310cd.css",
+    "static/js/main.bc74c74d.js"
   ]
 }
